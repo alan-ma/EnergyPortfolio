@@ -22,9 +22,6 @@ p {
 	font-family: "Open Sans";
 	font-size: 1.3rem;
 }
-#info h3 {
-	color: #EEE;
-}
 a {
 	color: #FFF;
 }
@@ -32,7 +29,7 @@ a {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 40vh;
+	min-height: 20vh;
 	background-color: #2196F3;
 	color: #FFF;
 	display: flex;
@@ -40,6 +37,9 @@ a {
 	box-shadow: 0 7px 4px #888;
 	padding: 50px;
 	box-sizing: border-box;
+}
+#info h3 {
+	color: #EEE;
 }
 .center {
 	text-align: center;
@@ -60,6 +60,7 @@ a {
 	margin: 50px;
 	position: relative;
 	cursor: pointer;
+	order: 2;
 }
 .post h1 {
 	font-size: 2rem;
@@ -71,12 +72,7 @@ a {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background:
-		linear-gradient(
-			rgba(0, 0, 0, 0), 
-      		rgba(0, 0, 0, 0)
-    	),
-		url("img/logo.jpg");
+	background:	url("img/logo.jpg");
 	background-size: 100% 100%;
 	filter: blur(0px);
 	box-sizing: border-box;
@@ -100,10 +96,68 @@ a {
 .post:hover .content {
 	opacity: 1;
 }
-@media screen and (max-width: 1079px) {
-	#info {
-		height: 50vh;
+.blog {
+	box-sizing: border-box;
+	order: 1;
+	width: 100vw;
+	top: 0;
+	margin: auto;
+	color: #000;
+	font-family: "Open Sans";
+	display: none;
+	padding-bottom: 15px;
+}
+.blog p {
+	font-size: 1.3rem;
+}
+.media img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+.body {
+	float: left;
+	width: 70vw;
+	box-sizing: border-box;
+	padding: 20px;
+	height: 100%;
+	margin-bottom: 20px;
+}
+.media {
+	float: right;
+	width: 30vw;
+	height: 100%;
+	margin-bottom: 20px;
+}
+.close {
+	background-color: #64B5F6;
+	width: 100%;
+	height: 40px;
+	margin: auto;
+	clear: both;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #DDD;
+	font-family: "Montserrat";
+	font-size: 2rem;
+}
+.close:hover {
+	transform: scaleY(1.2);
+	color: #FFF;
+}
+@media screen and (max-width: 1440px) and (min-width: 720px) {
+	#posts {
+		min-height: 30vh;
 	}
+	.post {
+		width: 40vw;
+		height: 40vw;
+		margin: 50px;
+	}
+}
+@media screen and (max-width: 719px) {
 	#posts {
 		min-height: 30vh;
 	}
@@ -112,17 +166,15 @@ a {
 		height: 80vw;
 		margin: 50px auto;
 	}
-}
-@media screen and (max-width: 1640px) and (min-width: 1080px) {
-	#info {
-		height: 45vh;
+	.body {
+		float: none;
 	}
-	#posts {
-		min-height: 30vh;
+	.media {
+		float: none;
+		width: 100%;
 	}
-	.post {
-		width: 40vw;
-		height: 40vw;
-		margin: 50px;
+	.media img {
+		width: 60%;
+		margin: auto;
 	}
 }
