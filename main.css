@@ -147,6 +147,33 @@ a {
 	transform: scaleY(1.2);
 	color: #FFF;
 }
+@media screen and (min-width: 1441px) {
+	/* Prepare for some hard-coded display */
+	#blog0, #blog1, #blog2 {
+		order: 0;
+	}
+	#post0, #post1, #post2 {
+		order: 1;
+	}
+	#blog3, #blog4, #blog5 {
+		order: 2;
+	}
+	#post3, #post4, #post5 {
+		order: 3;
+	}
+	#blog6, #blog7, #blog8 {
+		order: 2;
+	}
+	#post6, #post7, #post8 {
+		order: 3;
+	}
+	#blog9, #blog10, #blog11 {
+		order: 2;
+	}
+	#post9, #post10, #post11 {
+		order: 3;
+	}
+}
 @media screen and (max-width: 1440px) and (min-width: 720px) {
 	#posts {
 		min-height: 30vh;
@@ -155,6 +182,37 @@ a {
 		width: 40vw;
 		height: 40vw;
 		margin: 50px;
+	}
+	/* Prepare for some hard-coded display */
+	#blog0, #blog1 {
+		order: 0;
+	}
+	#post0, #post1 {
+		order: 1;
+	}
+	#blog2, #blog3 {
+		order: 2;
+	}
+	#post2, #post3 {
+		order: 3;
+	}
+	#blog4, #blog5 {
+		order: 4;
+	}
+	#post4, #post5 {
+		order: 5;
+	}
+	#blog6, #blog7 {
+		order: 6;
+	}
+	#post6, #post7 {
+		order: 7;
+	}
+	#blog8, #blog9 {
+		order: 8;
+	}
+	#post8, #post9 {
+		order: 9;
 	}
 }
 @media screen and (max-width: 719px) {
@@ -165,6 +223,10 @@ a {
 		width: 80vw;
 		height: 80vw;
 		margin: 50px auto;
+		order: 0;
+	}
+	.blog {
+		order: 0;
 	}
 	.body {
 		float: none;

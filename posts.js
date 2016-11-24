@@ -1,5 +1,12 @@
 var posts = [
 	{
+		id: 6,
+		date: "Nov. 14, 2016",
+		title: "Title",
+		image: "logo.jpg",
+		content: "Last"
+	},
+	{
 		id: 5,
 		date: "Nov. 14, 2016",
 		title: "Title",
@@ -32,6 +39,6 @@ var posts = [
 		date: "Nov. 14, 2016",
 		title: "Title",
 		image: "logo.jpg",
-		content: "Hello World!"
+		content: "First"
 	}
 ]
