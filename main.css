@@ -147,7 +147,8 @@ a {
 	transform: scaleY(1.2);
 	color: #FFF;
 }
-@media screen and (min-width: 1441px) {
+/* Large Breakpoint */
+@media screen and (min-width: 961px) {
 	/* Prepare for some hard-coded display */
 	#blog0, #blog1, #blog2 {
 		order: 0;
