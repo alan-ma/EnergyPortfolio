@@ -57,10 +57,11 @@ a {
 	height: 30vw;
 	width: 30vw;
 	background-color: #81D4FA;
-	margin: 50px;
+	margin: 20px;
 	position: relative;
 	cursor: pointer;
 	order: 2;
+	box-sizing: border-box;
 }
 .post h1 {
 	font-size: 2rem;
@@ -183,7 +184,6 @@ a {
 	.post {
 		width: 40vw;
 		height: 40vw;
-		margin: 50px;
 	}
 	/* Prepare for some hard-coded display */
 	#blog0, #blog1 {
