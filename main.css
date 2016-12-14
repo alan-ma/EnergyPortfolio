@@ -149,7 +149,7 @@ a {
 	color: #FFF;
 }
 #comments {
-	margin: auto;
+	text-align: center;
 }
 /* Large Breakpoint */
 @media screen and (min-width: 961px) {
