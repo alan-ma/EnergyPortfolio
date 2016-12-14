@@ -148,6 +148,9 @@ a {
 	transform: scaleY(1.2);
 	color: #FFF;
 }
+#comments {
+	margin: auto;
+}
 /* Large Breakpoint */
 @media screen and (min-width: 961px) {
 	/* Prepare for some hard-coded display */
