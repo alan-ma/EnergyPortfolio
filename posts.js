@@ -25,7 +25,7 @@ var posts = [
 		date: "Nov. 14, 2016",
 		title: "Title",
 		image: "logo.jpg",
-		content: "Hello World!"
+		content: "Third!"
 	},
 	{
 		id: 2,
