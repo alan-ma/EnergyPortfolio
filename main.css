@@ -54,10 +54,10 @@ a {
 	justify-content: center;
 }
 .post {
-	height: 30vw;
-	width: 30vw;
+	height: 20vw;
+	width: 20vw;
 	background-color: #81D4FA;
-	margin: 20px;
+	margin: 3vw 6vw;
 	position: relative;
 	cursor: pointer;
 	order: 2;
