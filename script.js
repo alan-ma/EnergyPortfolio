@@ -27,7 +27,7 @@ function open_this(id) {
         if ($(this).attr('data-realid') == id) {
             $(this).slideDown();
             var objDiv = document.body;
-            objDiv.scrollTop = objDiv.scrollHeight;
+            objDiv.scrollTop = $(this).scrollHeight;
         }
     });
 }
