@@ -151,6 +151,9 @@ a {
 #comments {
 	text-align: center;
 }
+.fb-comments {
+	width: 80vw;
+}
 /* Large Breakpoint */
 @media screen and (min-width: 961px) {
 	/* Prepare for some hard-coded display */
