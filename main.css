@@ -174,16 +174,40 @@ a {
 		order: 3;
 	}
 	#blog6, #blog7, #blog8 {
-		order: 2;
+		order: 4;
 	}
 	#post6, #post7, #post8 {
-		order: 3;
+		order: 5;
 	}
 	#blog9, #blog10, #blog11 {
-		order: 2;
+		order: 6;
 	}
 	#post9, #post10, #post11 {
-		order: 3;
+		order: 7;
+	}
+	#blog12, #blog13, #blog14 {
+		order: 8;
+	}
+	#post12, #post13, #post14 {
+		order: 9;
+	}
+	#blog15, #blog16, #blog17 {
+		order: 10;
+	}
+	#post15, #post16, #post17 {
+		order: 11;
+	}
+	#blog18, #blog19, #blog20 {
+		order: 12;
+	}
+	#post18, #post19, #post20 {
+		order: 13;
+	}
+	#blog21, #blog22, #blog23 {
+		order: 14;
+	}
+	#post21, #post22, #post23 {
+		order: 15;
 	}
 }
 /* Medium Breakpoint: */
@@ -225,6 +249,45 @@ a {
 	}
 	#post8, #post9 {
 		order: 9;
+	}
+	#blog10, #blog11 {
+		order: 8;
+	}
+	#post10, #post11 {
+		order: 9;
+	}
+	#blog12, #blog13 {
+		order: 8;
+	}
+	#post12, #post13 {
+		order: 9;
+	}
+	#blog14, #blog15 {
+		order: 8;
+	}
+	#post14, #post15 {
+		order: 9;
+	}
+	#blog16, #blog17 {
+		order: 8;
+	}
+	#post16, #post17 {
+		order: 9;
+	}
+	#blog18, #blog19 {
+		order: 8;
+	}
+	#post20, #post21 {
+		order: 9;
+	}
+	#blog20, #blog21 {
+		order: 8;
+	}
+	#post22, #post23 {
+		order: 9;
+	}
+	#blog22, #blog23 {
+		order: 8;
 	}
 }
 /* Small Breakpoint: */
