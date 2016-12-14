@@ -151,8 +151,12 @@ a {
 #comments {
 	text-align: center;
 }
-.fb-comments {
+.fb-comments, .fb-comments * {
+    width:100% !important;
+}
+#comments {
 	width: 80vw;
+	margin: auto;
 }
 /* Large Breakpoint */
 @media screen and (min-width: 961px) {
