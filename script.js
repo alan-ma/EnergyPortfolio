@@ -3,9 +3,15 @@ function load_posts() {
 	for (i=0; i<posts.length; i++) {
         post_id = i.toString();
         real_id = posts[i].id.toString();
-        $("#posts").append('<div data-realid="'+real_id+'" class="blog" id="blog'+post_id+'"><div class="body"><h1>'+posts[i].title+'</h1><h2>'+posts[i].date+'</h2><p>'+posts[i].content+'</p></div><div class="media"><img src="img/'+posts[i].image+'"></div><div class="close">X</div></div><div class="post" id="post'+post_id+'"><div class="background"></div><div class="content"><h1>'+posts[i].date+'</h1></div></div>');
-        $("#"+post_id+" .background").css("background", "url(img/"+posts[i].image+")");
-        $("#"+post_id+" .background").css("background-size", "100% 100%");
+        if (posts[i].media > "") {
+            $("#posts").append('<div data-realid="'+real_id+'" class="blog" id="blog'+post_id+'"><div class="body"><h1>'+posts[i].title+'</h1><h2>'+posts[i].date+'</h2><p>'+posts[i].content+'</p></div><div class="media"><img src="img/'+posts[i].media+'"></div><div class="close">X</div></div><div class="post" id="post'+post_id+'"><div class="background"></div><div class="content"><h1>'+posts[i].date+': <br>'+posts[i].title+'</h1></div></div>');
+        } else {
+            $("#posts").append('<div data-realid="'+real_id+'" class="blog" id="blog'+post_id+'"><div class="body"><h1>'+posts[i].title+'</h1><h2>'+posts[i].date+'</h2><p>'+posts[i].content+'</p></div><div class="media"><video width="100%" height="auto" autoplay muted loop controls><source src="img/'+posts[i].video+'"></video></div><div class="close">X</div></div><div class="post" id="post'+post_id+'"><div class="background"></div><div class="content"><h1>'+posts[i].date+': <br>'+posts[i].title+'</h1></div></div>');
+        }
+        $("#post"+post_id+" .background").css("background", "url(img/"+posts[i].image+")");
+        $("#post"+post_id+" .background").css("background-size", "100% auto");
+        $("#post"+post_id+" .background").css("background-repeat", "no-repeat");
+        $("#post"+post_id+" .background").css("background-position", "center");
 	}
 }
 
@@ -22,19 +28,18 @@ function getParameterByName(name, url) {
 }
 
 function open_this(id) {
-    console.log(id);
     $(".blog").each(function(index) {
         if ($(this).attr('data-realid') == id) {
-            $(this).slideDown();
-            var objDiv = document.body;
-            objDiv.scrollTop = $(this).scrollHeight;
+            $(this).css("display","block");
+            var blogTopPosition = $(this).position().top;
+            $("#posts").scrollTop(blogTopPosition);
         }
     });
 }
 
 function main() {
-    open_post = getParameterByName('open');
 	load_posts();
+    open_post = getParameterByName('open');
     if (open_post > 0) {
         open_this(open_post);
     }
@@ -45,21 +50,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-    $(".blog").on('click', function () {
-        $(this).slideUp(); //close current one
-    });
     $(".post").on('click', function () {
-        $(".blog").slideUp();
+        $(".blog").css("display","none");
         var $content = $(this).prev(".blog");
-        $content.slideToggle(); //toggle the current one
+        $content.css("display","block"); //open the current one
     });
-});
-
-$(document).ready(function () {
-    $("#show").on('click', function () {
-        $(".content").slideDown(); //open all
-    });
-    $("#collapse").on('click', function () {
-        $(".content").slideUp(); //close all
+    $(".close").on('click', function () {
+        $(".blog").css("display","none");
     });
 });
