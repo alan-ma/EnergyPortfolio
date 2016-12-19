@@ -43,9 +43,6 @@ function main() {
     if (open_post > 0) {
         open_this(open_post);
     }
-}
-
-$(document).ready(function () {
     $(".post").on('click', function () {
         $(".blog").css("display","none");
         var $content = $(this).prev(".blog");
@@ -54,4 +51,4 @@ $(document).ready(function () {
     $(".close").on('click', function () {
         $(".blog").css("display","none");
     });
-});
+}
