@@ -280,17 +280,20 @@ p {
 	#blog18, #blog19 {
 		order: 18;
 	}
-	#post20, #post21 {
+	#post18, #post19 {
 		order: 19;
 	}
 	#blog20, #blog21 {
 		order: 20;
 	}
-	#post22, #post23 {
+	#post20, #post21 {
 		order: 21;
 	}
 	#blog22, #blog23 {
 		order: 22;
+	}
+	#post22, #post23 {
+		order: 23;
 	}
 }
 /* Small Breakpoint: */
