@@ -45,10 +45,6 @@ function main() {
     }
 }
 
-$(document).ready(function() {
-    main();
-});
-
 $(document).ready(function () {
     $(".post").on('click', function () {
         $(".blog").css("display","none");
