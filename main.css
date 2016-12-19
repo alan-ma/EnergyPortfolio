@@ -121,7 +121,7 @@ p {
 }
 .body {
 	float: left;
-	width: 70vw;
+	width: 66vw;
 	box-sizing: border-box;
 	padding: 20px;
 	height: 100%;
@@ -129,7 +129,7 @@ p {
 }
 .media {
 	float: right;
-	width: 30vw;
+	width: 27vw;
 	height: 100%;
 	margin-bottom: 20px;
 }
